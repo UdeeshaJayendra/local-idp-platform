@@ -1,0 +1,17 @@
+serviceName: payment-service
+namespace: dev
+
+image:
+  repository: ghcr.io/udeeshajayendra/payment-service
+  tag: latest
+
+replicaCount: 2
+
+ingress:
+  enabled: true
+  host: payment.dev.local
+
+hpa:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5

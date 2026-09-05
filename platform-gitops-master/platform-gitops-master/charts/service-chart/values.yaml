@@ -1,0 +1,46 @@
+serviceName: payment-service
+namespace: dev
+
+image:
+  repository: ghcr.io/udeeshajayendra/payment-service
+  tag: latest
+
+replicaCount: 2
+
+containerPort: 3000
+servicePort: 80
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi
+
+env:
+  - name: PORT
+    value: "3000"
+  - name: DB_HOST
+    value: postgres
+
+configMap:
+  LOG_LEVEL: info
+  APP_ENV: development
+
+secret:
+  DB_PASSWORD: changeme-dev-password
+
+ingress:
+  enabled: true
+  host: payment.dev.local
+
+hpa:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilization: 70
+
+probes:
+  livenessPath: /healthz
+  readinessPath: /readyz

@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: payment-service-production
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/UdeeshaJayendra/platform-gitops.git
+    targetRevision: master
+    path: charts/service-chart
+    helm:
+      valueFiles:
+        - values-production.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  syncPolicy:
+    # NOTE: production intentionally has NO automated sync block.
+    # This means changes require a manual "Sync" click/approval in Argo CD,
+    # simulating a production approval gate rather than auto-deploying.
+    syncOptions:
+      - CreateNamespace=false

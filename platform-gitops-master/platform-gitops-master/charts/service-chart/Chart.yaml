@@ -1,0 +1,6 @@
+apiVersion: v2
+name: service-chart
+description: Reusable Helm chart for platform services
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

@@ -1,0 +1,20 @@
+serviceName: payment-service
+namespace: staging
+
+image:
+  repository: ghcr.io/udeeshajayendra/payment-service
+  tag: latest
+
+replicaCount: 2
+
+ingress:
+  enabled: true
+  host: payment.staging.local
+
+hpa:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 4
+
+secret:
+  DB_PASSWORD: changeme-staging-password

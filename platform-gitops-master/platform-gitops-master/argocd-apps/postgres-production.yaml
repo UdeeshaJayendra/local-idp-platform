@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: postgres-production
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/UdeeshaJayendra/platform-gitops.git
+    targetRevision: master
+    path: infra/postgres-production
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=false
