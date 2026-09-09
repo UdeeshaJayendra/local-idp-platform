@@ -28,6 +28,7 @@ The project is implemented across four repositories that work together as a sing
 ---
 
 ## Project Overview
+<img width="1408" height="768" alt="4" src="https://github.com/user-attachments/assets/eeb5d073-7831-4756-adb5-e1a58456a586" />
 
 The goal of this project is to simulate how an internal platform team can provide developers with a **standardized golden path** for deploying services without requiring developers to manually manage Kubernetes manifests or execute `kubectl apply` as part of the normal deployment workflow.
 
