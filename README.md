@@ -54,6 +54,7 @@ This project was designed and implemented as a practical platform engineering sy
 ## Screenshots
 
 ## Argo CD dashboard
+<img width="1920" height="895" alt="Screenshot From 2026-08-22 10-34-29" src="https://github.com/user-attachments/assets/7c9065a6-a6a3-4b7d-a841-ebe340a1f7a4" />
 <img width="1917" height="902" alt="1" src="https://github.com/user-attachments/assets/2c126592-2954-4f18-98ec-b4f018fbba67" />
 <img width="1917" height="902" alt="1a" src="https://github.com/user-attachments/assets/3bdd0382-1cdb-4318-b0b9-9589b415df0b" />
 <img width="1917" height="902" alt="1b" src="https://github.com/user-attachments/assets/786c9c15-43c2-48aa-b84e-c5ad61f884d1" />
