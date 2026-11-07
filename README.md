@@ -67,6 +67,7 @@ This project was designed and implemented as a practical platform engineering sy
 
 ## GitHub Actions green CI run
 <img width="1917" height="659" alt="4" src="https://github.com/user-attachments/assets/bcd146a6-1379-45c3-bebc-115e389f10b0" />
+<img width="1917" height="892" alt="image" src="https://github.com/user-attachments/assets/df952294-e63c-4777-8a30-afe968b207a1" />
 
 ## Real API calls against the deployed service — same app, three environments, real data
 <img width="1917" height="575" alt="5" src="https://github.com/user-attachments/assets/021c3929-007e-493d-8af7-1cf65ed0cab2" />
